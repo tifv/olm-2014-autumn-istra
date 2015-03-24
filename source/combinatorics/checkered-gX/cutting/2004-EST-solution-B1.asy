@@ -1,0 +1,8 @@
+// access ../2004-EST-solution-common.asy as common.asy
+import common;
+
+draw(
+    (0,0)--(3,0)--(3,4)--(0,4)--cycle ^^
+    (0,1)--(2,1)--(2,2)--(1,2)--(1,3)--(3,3)
+);
+
