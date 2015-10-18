@@ -1,11 +1,10 @@
 % $date: 2014-11-10
-
 % $timetable:
 %   gX:
 %     2014-11-10:
 %       2:
 
-\section*{Клетчатая комбинаторика: разрезания}
+\section*{Клетчатая комбинаторика --- 1: разрезания}
 
 % $authors:
 % - Владимир Шарич
@@ -14,12 +13,10 @@
 \providecommand\ifincludesolutions{\iffalse}
 
 % $matter[with-solutions]:
+% - preamble package: subcaption
 % - verbatim: \begingroup\newcommand\ifincludesolutions{\iftrue}
 % - .[-with-solutions]
 % - verbatim: \endgroup
-
-% $required$packages:
-% - subcaption
 
 \emph{Задачи из short list'ов.}
 
@@ -113,7 +110,7 @@ $2 \times 3 \times 4$.
 \begin{problems}
 
 \item\textbf{(2002, ARM)}%
-\label{combinatorics/cutting-gX:2002-ARM:problem}
+\jeolmlabel{combinatorics/cutting-gX:2002-ARM:problem}
 Дано нечетное $n \in \mathbb{N}$.
 Единичные квадраты доски $n \times n$ покрашены в~шахматном порядке, причем
 углы черные.
@@ -138,30 +135,30 @@ $n \geq 7$.
     \begin{subfigure}{3.5cm}
     \jeolmfigure[width=\linewidth]{2002-ARM-solution-7}
     \caption{база индукции}
-    \label{combinatorics/cutting-gX:2002-ARM:solution:fig:7}
+    \jeolmlabel{combinatorics/cutting-gX:2002-ARM:solution:fig:7}
     \end{subfigure}
 \hfill
     \begin{subfigure}{4.5cm}
     \jeolmfigure[width=\linewidth]{2002-ARM-solution-p2}
     \caption{переход индукции}
-    \label{combinatorics/cutting-gX:2002-ARM:solution:fig:p2}
+    \jeolmlabel{combinatorics/cutting-gX:2002-ARM:solution:fig:p2}
     \end{subfigure}
 \hfill\strut\par
 \caption{пример (оценка сверху)
-к~решению задачи~\ref{combinatorics/cutting-gX:2002-ARM:problem}.}%
-\label{combinatorics/cutting-gX:2002-ARM:solution:fig}
+к~решению задачи~\jeolmref{combinatorics/cutting-gX:2002-ARM:problem}.}%
+\jeolmlabel{combinatorics/cutting-gX:2002-ARM:solution:fig}
 \end{center}\end{figure}
 \par
 Случай $n = 7$ может быть покрыт, как показано
-на~рис.~\ref{combinatorics/cutting-gX:2002-ARM:solution:fig:7}.
+на~рис.~\jeolmref{combinatorics/cutting-gX:2002-ARM:solution:fig:7}.
 Для $n > 7$ это тоже можно сделать, это следует по~индукции
-из~рис.~\ref{combinatorics/cutting-gX:2002-ARM:solution:fig:p2}.
+из~рис.~\jeolmref{combinatorics/cutting-gX:2002-ARM:solution:fig:p2}.
 \fi % \ifincludesolutions
 
 \begin{problems}
 
 \item\textbf{(2004, EST)}%
-\label{combinatorics/cutting-gX:2004-EST:problem}
+\jeolmlabel{combinatorics/cutting-gX:2004-EST:problem}
 Найдите все пары натуральных чисел $(m, n)$, такие что прямоугольник
 $m \times n$ может быть покрыт
 \emph{крюками}
@@ -180,7 +177,7 @@ $m \times n$ может быть покрыт
 $H$ также покрывает внутренний квадрат~$K$, поэтому множество крюков
 распадается на~пары $\{ H, K \}$, каждая из~которых образует одну из~двух фигур
 (будем называть их~\emph{плитками}) площади $12$, изображенных
-на~рис.~\ref{combinatorics/cutting-gX:2004-EST:solution:fig}.
+на~рис.~\jeolmref{combinatorics/cutting-gX:2004-EST:solution:fig}.
 \begin{figure}[ht]\begin{center}
 \strut\hfill
     \begin{subfigure}{0.2\linewidth}\begin{center}
@@ -199,8 +196,9 @@ $H$ также покрывает внутренний квадрат~$K$, по�
     \jeolmfigure[width=\linewidth]{2004-EST-solution-B2} $B_2$
     \end{center}\end{subfigure}
 \hfill\strut
-\caption{к~решению задачи~\ref{combinatorics/cutting-gX:2004-EST:problem}}%
-\label{combinatorics/cutting-gX:2004-EST:solution:fig}
+\caption{к~решению
+    задачи~\jeolmref{combinatorics/cutting-gX:2004-EST:problem}}%
+\jeolmlabel{combinatorics/cutting-gX:2004-EST:solution:fig}
 \end{center}\end{figure}
 Ясно, что наш прямоугольник должен покрываться такими плитками и~поэтому
 $12 \mid m n$.

@@ -1,0 +1,22 @@
+semi-invariant-and-induction-g9r2:
+  $date: 2014-11-13
+  $timetable:
+    g9r2:
+      2014-11-13:
+        1:
+  $caption: Комбинаторика (полуинварианты и индукция)
+  $authors:
+  - Владимир Брагин
+  $matter[g9r2,-no-header]:
+  - .[header]
+  $matter[g9r2,no-header,add-toc]:
+  - verbatim: \phantomsection
+    condition: {not: print}
+  - verbatim: |-
+      \addcontentsline{toc}{section}{%
+        Полуинварианты и индукция}
+  - .[-add-toc]
+  $matter[g9r2,no-header]:
+  - ../semi-invariant-g9r2/more
+  - verbatim: \resetproblem
+  - ../induction-g9r2

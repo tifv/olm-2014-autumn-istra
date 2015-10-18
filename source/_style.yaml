@@ -1,13 +1,8 @@
 $style:
-- /_style
-- /_style/local
+- delegate: /_style
 - verbatim: |-
-    \newcommand\jeolminstitutionname
-        {{\upshape[}\/Московские сборы по математике{\upshape\/]}}
-    \newcommand\jeolmdaterange
-        {{\upshape[}\/10--21 ноября 2014{\upshape\/]}}
-
-_style:
-  jeolm:
-    $delegate$groups: false
+    \renewcommand\jeolminstitution
+        {Московские сборы по математике}
+    \renewcommand\jeolmdaterange
+        {10--21 ноября 2014}
 

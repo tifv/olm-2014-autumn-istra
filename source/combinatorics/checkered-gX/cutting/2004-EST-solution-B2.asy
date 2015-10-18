@@ -1,4 +1,4 @@
-// access ../2004-EST-solution-common.asy as common.asy
+// access ../2004-EST-solution-common/ as common.asy
 import common;
 
 draw(

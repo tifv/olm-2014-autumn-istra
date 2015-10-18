@@ -1,4 +1,4 @@
-// access ../1998-IRN-solution-common.asy as common.asy
+// access ../1998-IRN-solution-common/ as common.asy
 
 import common;
 

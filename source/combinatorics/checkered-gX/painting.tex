@@ -1,11 +1,10 @@
 % $date: 2014-11-12
-
 % $timetable:
 %   gX:
 %     2014-11-12:
 %       1:
 
-\section*{Клетчатая комбинаторика: Раскраски}
+\section*{Клетчатая комбинаторика --- 3: раскраски}
 
 % $authors:
 % - Владимир Шарич
@@ -48,7 +47,8 @@ Beware!}
 единственными образом, чтобы удовлетворить требованию.
 Таким образом, в~этом случае $2^n-2$ возможных раскрасок.
 \par
-Далее, предположим, что вершины в~нижнем ряду раскрашены попеременно в~красный и~синий.
+Далее, предположим, что вершины в~нижнем ряду раскрашены попеременно в~красный
+и~синий.
 Существует две подобных раскраски.
 В~этом случае,то~же должно выполняться для каждого ряда, и~отсюда мы~получаем
 $2^n$ возможных раскрасок.
@@ -60,7 +60,7 @@ $(2^n - 2) + 2^n = 2^{n+1} - 2$.
 \begin{problems}
 
 \item\textbf{(1998, IRN)}%
-\label{combinatorics/painting-gX:1998-IRN:problem}
+\jeolmlabel{combinatorics/painting-gX:1998-IRN:problem}
 Игра производится на~прямоугольной доске $m \times n$, используя $m n$ фишек.
 Каждая фишка с~одной стороны белая, а~с~другой~--- черная.
 Изначально в~каждой клетке доски лежит фишка белой стороной вверх, кроме одного
@@ -97,8 +97,9 @@ $(k - r)$ черных фишек становятся белыми.
 \par
 С~другой стороны, если $m$ или $n$ нечетно, игра может быть успешно закончена.
 Пусть $m$~--- нечетно.
-Как показано на~рис.~\ref{combinatorics/painting-gX:1998-IRN:solution:fig}, мы~можем
-прийти к~позиции $(1)$ за~$m$ ходов;
+Как показано
+на~рис.~\jeolmref{combinatorics/painting-gX:1998-IRN:solution:fig},
+мы~можем прийти к~позиции $(1)$ за~$m$ ходов;
 за~$\frac{m+1}{2}$ ходов мы~делаем позицию $(1')$, и~за~следующие
 $\frac{m-1}2$ ходов~--- позицию $(2)$.
 Будем продолжать это, пока не~опустошим все колонки.
@@ -112,17 +113,17 @@ $\frac{m-1}2$ ходов~--- позицию $(2)$.
 \;\drown{$\to$}\;
 \drown{\jeolmfigure{1998-IRN-solution-3}}
 \par\caption{позиции $(0)$, $(1)$, $(1')$, $(2)$
-к~решению задачи~\ref{combinatorics/painting-gX:1998-IRN:problem}}%
-\label{combinatorics/painting-gX:1998-IRN:solution:fig}%
+к~решению задачи~\jeolmref{combinatorics/painting-gX:1998-IRN:problem}}%
+\jeolmlabel{combinatorics/painting-gX:1998-IRN:solution:fig}%
 \end{center}\end{figure}
 \fi % \ifincludesolutions
 
 \begin{problems}
 
 \item\textbf{(1999, BLR)}
-\label{combinatorics/painting-gX:1999-BLR:problem}
+\jeolmlabel{combinatorics/painting-gX:1999-BLR:problem}
 Дано четное $n \in \mathbb{N}$.
-Скажем, что две различные клетки доски $n \times n$ \emph{соседние}, если у~них
+Скажем, что две различные клетки доски $n \times n$ \emph{соседние,} если у~них
 есть общая сторона.
 Найдите наименьшее число клеток на~доске $n \times n$, которые надо отметить,
 чтобы каждая клетка (отмеченная или нет) имела отмеченную соседнюю клетку.
@@ -132,13 +133,14 @@ $\frac{m-1}2$ ходов~--- позицию $(2)$.
 \ifincludesolutions
 \begin{figure}[ht]\begin{center}
 \jeolmfigure[width=0.4\linewidth]{1999-BLR-solution-frames}
-\caption{к~решению задачи~\ref{combinatorics/painting-gX:1999-BLR:problem}.}%
-\label{combinatorics/painting-gX:1999-BLR:solution:fig}%
+\caption{к~решению
+    задачи~\jeolmref{combinatorics/painting-gX:1999-BLR:problem}.}%
+\jeolmlabel{combinatorics/painting-gX:1999-BLR:solution:fig}%
 \end{center}\end{figure}
 Пусть $n = 2 k$.
 Покрасим крайние квадратики в~черный, соседние к~ним~--- в~белый.
 Далее, красим попеременно в~черный и~белый цвета, пока не~покрасим все клетки 
-(рис.~\ref{combinatorics/painting-gX:1999-BLR:solution:fig}).
+(рис.~\jeolmref{combinatorics/painting-gX:1999-BLR:solution:fig}).
 Назовем клетки, покрашенные некоторой итерацией, <<рамкой>>.
 В~описанной раскраске каждая клетка (белая или черная) будет соседней ровно
 двум черным клеткам.
@@ -164,7 +166,7 @@ $\frac{m-1}2$ ходов~--- позицию $(2)$.
 \begin{problems}
 
 \item\textbf{(2000, CZE)}%
-\label{combinatorics/painting-gX:2000-CZE:problem}
+\jeolmlabel{combinatorics/painting-gX:2000-CZE:problem}
 Пусть $n$ и~$k$~--- натуральные числа такие, что $n / 2 < k \leq 2 n / 3$.
 Найдите наименьшее $m$, для которого можно разместить $m$~пешек в~$m$~квадратах
 шахматной доски $n \times n$ так, что ни~одна строка и~ни~один столбец
@@ -190,14 +192,15 @@ $(4 n - 4 k)$ пешек.
     n - k    &    G    &     F     &    E    \\[2ex]
              &  n - k  &  2 k - n  &  n - k
 \end{matrix}\)
-\caption{к~решению задачи~\ref{combinatorics/painting-gX:2000-CZE:problem}.}%
-\label{combinatorics/painting-gX:2000-CZE:solution:fig}
+\caption{к~решению
+    задачи~\jeolmref{combinatorics/painting-gX:2000-CZE:problem}.}%
+\jeolmlabel{combinatorics/painting-gX:2000-CZE:solution:fig}
 \end{center}\end{figure}
 Докажем теперь, что хорошая расстановка должна содержать не~менее
 $(4 n - 4 k)$ пешек.
 Предположим, что мы~имеем хорошую расстановку $m$~пешек.
 Разделим доску на~девять прямоугольников, как показано
-на~рис.~\ref{combinatorics/painting-gX:2000-CZE:solution:fig}.
+на~рис.~\jeolmref{combinatorics/painting-gX:2000-CZE:solution:fig}.
 Пусть $a, b, \ldots, h$~--- количества пешек в~прямоугольниках
 $A, B, \ldots, H$ соответственно.
 Заметим, что каждый столбец, проходящий через $A$, $B$, и~$C$, либо содержит

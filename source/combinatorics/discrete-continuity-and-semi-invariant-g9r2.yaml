@@ -1,0 +1,22 @@
+discrete-continuity-and-semi-invariant-g9r2:
+  $date: 2014-11-12
+  $timetable:
+    g9r2:
+      2014-11-12:
+        3:
+  $caption: Комбинаторика (дискретная непрерывность и полуинварианты)
+  $authors:
+  - Владимир Брагин
+  $matter[g9r2,-no-header]:
+  - .[header]
+  $matter[g9r2,no-header,add-toc]:
+  - verbatim: \phantomsection
+    condition: {not: print}
+  - verbatim: |-
+      \addcontentsline{toc}{section}{%
+        Дискретная непрерывность и полуинварианты}
+  - .[-add-toc]
+  $matter[g9r2,no-header]:
+  - verbatim: \section*{Комбинаторика}
+  - ../discrete-continuity-g9r2[contained]
+  - ../semi-invariant-g9r2/main[contained]
