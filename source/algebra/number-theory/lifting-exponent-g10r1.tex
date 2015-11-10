@@ -10,6 +10,12 @@
 % - Андрей Меньщиков
 
 \begingroup
+    \def\divides{\mathrel{\vert}}
+    \ifx\mathup\undefined
+        \def\eulerphi{\upphi}
+    \else
+        \def\eulerphi{\mathup{\phi}}
+    \fi
     \def\ord{\operatorname{ord}}
 
 \definition
@@ -19,7 +25,7 @@
 \claim{Лемма об уточнении показателя%
 \footnote{англ. lifting the exponent lemma}}
 Даны простое число~$p$ и~натуральные числа $k$, $a$ и~$b$, причем
-$p \mid a - b$, $a \neq b$, $a$ и~$b$ не~делятся на~$p$.
+$p \divides (a - b)$, $a \neq b$, $a$ и~$b$ не~делятся на~$p$.
 Тогда если $p > 2$ или $\ord_p (a - b) > 1$,
 то~$\ord_p (a^k - b^k) = \ord_p (a - b) + \ord_p(k)$.
 
@@ -50,7 +56,7 @@ $x^n + y^n = p^k$.
 
 \item
 Докажите, что порядок числа~2 по~модулю $3^n$ (т.~е. наименьшее натуральное
-число~$d$ такое, что $2^d \equiv 1 \pmod{3^{n}}$) равен $\phi(3^n)$.
+число~$d$ такое, что $2^d \equiv 1 \pmod{3^{n}}$) равен $\eulerphi(3^n)$.
 
 \item
 Решите в~натуральных числах уравнение $z^x + 1 = (z + 1)^y$.
@@ -58,9 +64,9 @@ $x^n + y^n = p^k$.
 \item
 Пусть $a, b \in \mathbb{N}$.
 Докажите, что лишь для конечного числа $n \in \mathbb{N}$ сумма
-$\left(a + \frac{1}{2}\right)^n + \left(b + \frac{1}{2}\right)^n$~--- целая.
+$\left( a + 1/2 \right)^n + \left( b + 1/2 \right)^n$~--- целая.
 
 \end{problems}
 
-\endgroup % \def\ord
+\endgroup % \def\divides \def\eulerphi \def\ord
 

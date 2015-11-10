@@ -12,6 +12,9 @@
 % $authors:
 % - Владимир Трушков
 
+\begingroup
+    \def\abs#1{\lvert #1 \rvert}
+
 \begin{problems}
 
 \item
@@ -62,8 +65,10 @@ $\alpha \cdot f(x) + \beta \cdot g(x) > 0$.
 Найдите наибольшее возможное значение~$a$.
 
 \item
-Квадратный трехчлен $p(x)$ таков, что $|p(x)| \leq 1$ при $0 \leq x \leq 1$.
+Квадратный трехчлен $p(x)$ таков, что $\abs{p(x)} \leq 1$ при $0 \leq x \leq 1$.
 Докажите, что $p(- 1 / 2) \leq 7$.
 
 \end{problems}
+
+\endgroup % \def\abs
 

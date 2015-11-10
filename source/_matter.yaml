@@ -33,6 +33,17 @@ Integral:
   - verbatim: \mainmatter
   - delegate: .[integral]
 
+  - verbatim: \chapter{Дополнительные материалы}
+
+  - - verbatim: \phantomsection
+      condition: -print
+    - verbatim:
+        \addcontentsline{toc}{section}
+          {Клетчатая комбинаторика с решениями}
+    - verbatim: \begin{jeolmlabelspace}{solutions}
+    - /combinatorics/checkered-gX[gX,-add-toc,with-solutions]
+    - verbatim: \end{jeolmlabelspace}
+
   $matter[integral]:
   - delegate: g9r2
   - delegate: g9r1

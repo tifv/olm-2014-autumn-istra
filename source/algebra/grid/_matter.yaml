@@ -1,0 +1,15 @@
+$timetable:
+  g11r2:
+    2014-11-14: {}
+$authors:
+- Андрей Кушнир
+$matter[integral,g11r2,-no-header]:
+- .[header]
+$matter[integral,g11r2,no-header]:
+- main
+- verbatim: \resetproblem
+- more[contained]
+$matter[integral,g11r2,add-toc,no-header]:
+- main
+- verbatim: \resetproblem
+- more[contained,-add-toc]
